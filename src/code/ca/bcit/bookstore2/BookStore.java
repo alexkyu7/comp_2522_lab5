@@ -7,7 +7,7 @@ import java.util.List;
  * Represents the bookstore.
  *
  * @author Alex Lee
- * @author asd
+ * @author Evan Tang
  *
  * @version 1.0
  */
@@ -16,6 +16,7 @@ public class BookStore
     private static final int DECADE_OFFSET = 9;
 
     private static final String EMPTY_STRING = "";
+    private static final int INITIAL_COUNTER = 0;
 
     private static final int INITIAL_YEAR = 1;
     private static final int CURRENT_YEAR = 2026;
@@ -161,17 +162,14 @@ public class BookStore
                     "year must be between " + INITIAL_YEAR + " and " + CURRENT_YEAR);
         }
 
-        boolean found = false;
-
         for (final Novel novel : novels)
         {
             if (novel.getYearPublished() == year)
             {
-                found = true;
-                break;
+                return true;
             }
         }
-        return found;
+        return false;
     }
 
 
@@ -220,7 +218,7 @@ public class BookStore
                     "Year must be between " + INITIAL_YEAR + " and " + CURRENT_YEAR);
         }
 
-        int numberCounter = 0;
+        int numberCounter = INITIAL_COUNTER;
 
         for (final Novel novel : novels)
         {

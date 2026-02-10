@@ -2,10 +2,18 @@ package ca.bcit.bookstore2;
 
 import java.util.List;
 
+/**
+ * Runs the bookstore and bookshop classes.
+ *
+ * @author Alex Lee
+ * @author Evan Tang
+ *
+ * @version 1
+ */
 public class Main
 {
     /**
-     * drives the program.
+     * Drives the program.
      *
      * @param args unused
      */

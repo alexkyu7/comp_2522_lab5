@@ -2,7 +2,14 @@ package ca.bcit.bookstore2;
 
 import java.util.*;
 
-
+/**
+ * Represents the Bookshop.
+ *
+ * @author Alex Lee
+ * @author Evan Tang
+ *
+ * @version 1
+ */
 public class Bookshop
 {
     final Map<String, Novel> novelMap;

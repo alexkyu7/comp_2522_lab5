@@ -4,7 +4,7 @@ package ca.bcit.bookstore2;
  * Represents the Novel.
  *
  * @author Alex Lee
- * @author asd
+ * @author Evan Tang
  *
  * @version 1.0
  */
